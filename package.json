@@ -1,0 +1,17 @@
+{
+  "name": "jd-resume-matcher",
+  "version": "1.0.0",
+  "description": "AI-powered resume and job description matcher",
+  "scripts": {
+    "dev": "python -m http.server 8000 --directory frontend",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "resume",
+    "job-matching",
+    "ats",
+    "career"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

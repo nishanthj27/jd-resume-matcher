@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume-JD Matcher | AI-Powered Resume Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resume-JD Matcher</h1>
+            <p class="subtitle">Analyze how well your resume matches the job description</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="resume">
+                        <span class="label-text">Your Resume</span>
+                        <span class="label-hint">Paste your resume text here</span>
+                    </label>
+                    <textarea 
+                        id="resume" 
+                        placeholder="Paste your complete resume text here..."
+                        rows="10"
+                    ></textarea>
+                    <div class="char-count" id="resumeCharCount">0 characters</div>
+                </div>
+
+                <div class="input-group">
+                    <label for="jobDescription">
+                        <span class="label-text">Job Description</span>
+                        <span class="label-hint">Paste the job description here</span>
+                    </label>
+                    <textarea 
+                        id="jobDescription" 
+                        placeholder="Paste the complete job description here..."
+                        rows="10"
+                    ></textarea>
+                    <div class="char-count" id="jdCharCount">0 characters</div>
+                </div>
+            </div>
+
+            <button id="analyzeBtn" class="analyze-btn">
+                <span id="btnText">Analyze Match</span>
+                <div class="loader" id="loader"></div>
+            </button>
+
+            <!-- Results Section -->
+            <div id="results" class="results-section hidden">
+                <!-- Overall Score -->
+                <div class="score-card">
+                    <h2>Overall Match Score</h2>
+                    <div class="score-circle">
+                        <svg viewBox="0 0 200 200">
+                            <circle cx="100" cy="100" r="90" class="score-bg"/>
+                            <circle cx="100" cy="100" r="90" class="score-fill" id="scoreCircle"/>
+                        </svg>
+                        <div class="score-text">
+                            <span id="scorePercentage">0</span>%
+                        </div>
+                    </div>
+                    <p id="scoreMessage" class="score-message"></p>
+                </div>
+
+                <!-- Skills Analysis -->
+                <div class="analysis-card">
+                    <h3>Skills Analysis</h3>
+                    <div class="skills-match">
+                        <div class="matched-skills">
+                            <h4>✅ Matched Skills</h4>
+                            <div id="matchedSkills" class="skill-tags"></div>
+                        </div>
+                        <div class="missing-skills">
+                            <h4>❌ Missing Skills</h4>
+                            <div id="missingSkills" class="skill-tags"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Analysis -->
+                <div class="analysis-card">
+                    <h3>Experience Match</h3>
+                    <div id="experienceAnalysis" class="experience-content"></div>
+                </div>
+
+                <!-- Keywords Analysis -->
+                <div class="analysis-card">
+                    <h3>Keywords Analysis</h3>
+                    <div class="keywords-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Found Keywords</span>
+                            <span id="foundKeywords" class="stat-value">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Missing Keywords</span>
+                            <span id="missingKeywords" class="stat-value">0</span>
+                        </div>
+                    </div>
+                    <div id="keywordsList" class="keywords-list"></div>
+                </div>
+
+                <!-- Suggestions -->
+                <div class="analysis-card suggestions-card">
+                    <h3>📝 Improvement Suggestions</h3>
+                    <div id="suggestions" class="suggestions-list"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

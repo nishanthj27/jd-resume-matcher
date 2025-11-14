@@ -1,0 +1,38 @@
+{
+    "technical_skills": [
+        "programming", "software", "development", "engineering", "coding",
+        "database", "framework", "library", "platform", "system",
+        "architecture", "design", "implementation", "deployment", "maintenance",
+        "optimization", "performance", "security", "scalability", "reliability"
+    ],
+    "soft_skills": [
+        "leadership", "teamwork", "collaboration", "communication", "presentation",
+        "problem-solving", "analytical", "critical thinking", "creativity", "innovation",
+        "time management", "organization", "attention to detail", "adaptability", "flexibility",
+        "motivation", "initiative", "proactive", "responsible", "professional"
+    ],
+    "action_verbs": [
+        "developed", "designed", "implemented", "created", "built",
+        "managed", "led", "coordinated", "organized", "planned",
+        "improved", "optimized", "enhanced", "increased", "reduced",
+        "analyzed", "evaluated", "assessed", "researched", "investigated",
+        "trained", "mentored", "guided", "supported", "assisted",
+        "achieved", "accomplished", "delivered", "completed", "executed"
+    ],
+    "experience_indicators": [
+        "years experience", "years of experience", "experience in", "experienced with",
+        "proficient in", "skilled in", "expertise in", "knowledge of", "familiar with",
+        "worked on", "worked with", "responsible for", "involved in", "participated in"
+    ],
+    "education_terms": [
+        "bachelor", "master", "phd", "doctorate", "degree",
+        "university", "college", "institute", "graduation", "graduated",
+        "computer science", "information technology", "engineering", "mathematics", "physics",
+        "certification", "certified", "training", "course", "program"
+    ],
+    "job_levels": [
+        "junior", "entry level", "associate", "mid level", "senior",
+        "lead", "principal", "staff", "manager", "director",
+        "architect", "consultant", "specialist", "expert", "analyst"
+    ]
+}
