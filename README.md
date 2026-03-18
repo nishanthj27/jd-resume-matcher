@@ -12,7 +12,7 @@ An AI-powered tool that analyzes how well your resume matches a job description,
 
 ## Demo
 
-[Live Demo](https://your-app.vercel.app)
+[Live Demo](https://jd-resume-matcher.vercel.app/)
 
 ## Technology Stack
 
